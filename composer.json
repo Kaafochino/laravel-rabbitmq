@@ -1,0 +1,30 @@
+{
+    "name": "kaafochino/laravel-rabbitmq",
+    "description": "laravel rabbitmq library package",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Kaafochino\\LaravelRabbitmq\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Karim Pazoki",
+            "email": "pazoki.karim72@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kaafochino\\LaravelRabbitmq\\LaravelRabbitmqServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php-amqplib/php-amqplib": "^3.2"
+    }
+}
