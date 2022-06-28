@@ -4,7 +4,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Kaafochino\\LaravelRabbitmq\\": "src/"
+            "Kaafochino\\LaravelRabbitMQ\\": "src/"
         }
     },
     "authors": [
@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kaafochino\\LaravelRabbitmq\\LaravelRabbitmqServiceProvider"
+                "Kaafochino\\LaravelRabbitMQ\\LaravelRabbitMQServiceProvider"
             ]
         }
     },
