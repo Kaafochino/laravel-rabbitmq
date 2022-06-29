@@ -35,6 +35,7 @@ class CompetingConsumers implements RabbitMQ
         );
 
         $this->channel->basic_publish($message, $this->setExchange(), $this->setQueue());
+        $this->disconnect();
     }
 
     public function subscribe(callable $callback, string $consumer_tag=''): void
@@ -48,6 +49,7 @@ class CompetingConsumers implements RabbitMQ
         while ($this->channel->is_open()) {
             $this->channel->wait();
         }
+        $this->disconnect();
     }
 
     public function connect(): void
